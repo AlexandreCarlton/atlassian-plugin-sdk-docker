@@ -12,7 +12,7 @@ atlassian-plugin-sdk-image.tar: Dockerfile
 	docker build \
 		--build-arg PLUGIN_SDK_VERSION=$(PLUGIN_SDK_VERSION) \
 		--label org.label-schema.build-date="$(shell date --rfc-3339=seconds)" \
-		--label org.label-schema.name="alexandrecarlton/atlassian-plugin-sdk" \
+		--label org.label-schema.name="atlassian-plugin-sdk" \
 		--label org.label-schema.description="A docker image containing the Atlassian SDK" \
 		--label org.label-schema.url="https://github.com/AlexandreCarlton/atlassian-plugin-sdk-docker" \
 		--label org.label-schema.vcs-url="https://github.com/AlexandreCarlton/atlassian-plugin-sdk-docker" \
